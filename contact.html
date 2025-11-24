@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — New City Plus Hospital</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">New City Plus</div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="departments.html">Departments</a>
+        <a href="services.html">Services</a>
+        <a href="doctors.html">Doctors</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section">
+      <div class="kicker">CONTACT</div>
+      <div class="headline">Get in Touch</div>
+      <p class="lead">Use the form below to book appointments or ask questions. For urgent matters call <strong>+1 (234) 567-890</strong>.</p>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:22px;align-items:start">
+
+        <!-- Contact info -->
+        <div style="background:var(--card);padding:20px;border-radius:12px;box-shadow:0 12px 30px rgba(16,24,40,0.06)">
+          <h4>Contact Details</h4>
+          <p style="color:var(--muted)">📍 123 Healthcare Avenue, New City</p>
+          <p style="color:var(--muted)">📞 +1 (234) 567-890</p>
+          <p style="color:var(--muted)">✉️ info@newcityhospital.com</p>
+          <p style="color:var(--muted)">🕒 Open 24/7 Emergency</p>
+        </div>
+
+        <!-- Contact form (Formspree) -->
+        <!-- Replace `yourformid` with your actual Formspree ID to receive emails -->
+        <div style="background:var(--card);padding:16px;border-radius:12px;box-shadow:0 12px 30px rgba(16,24,40,0.06)">
+          <form action="https://formspree.io/f/yourformid" method="POST">
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <div style="flex:1;display:flex;flex-direction:column;margin-bottom:10px">
+                <label style="font-size:13px;color:var(--muted)">Full Name</label>
+                <input type="text" name="name" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef" placeholder="Your full name" />
+              </div>
+
+              <div style="flex:1;display:flex;flex-direction:column;margin-bottom:10px">
+                <label style="font-size:13px;color:var(--muted)">Email</label>
+                <input type="email" name="_replyto" required style="padding:10px;border-radius:8px;border:1px solid #e6e9ef" placeholder="your@email.com" />
+              </div>
+            </div>
+
+            <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:10px">
+              <div style="flex:1;display:flex;flex-direction:column">
+                <label style="font-size:13px;color:var(--muted)">Department</label>
+                <select name="department" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef">
+                  <option>Cardiology</option>
+                  <option>Orthopedics</option>
+                  <option>Pediatrics</option>
+                  <option>Gynecology</option>
+                  <option>Surgery</option>
+                </select>
+              </div>
+
+              <div style="flex:1;display:flex;flex-direction:column">
+                <label style="font-size:13px;color:var(--muted)">Preferred Date</label>
+                <input type="date" name="date" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef" />
+              </div>
+            </div>
+
+            <div style="display:flex;flex-direction:column;margin-bottom:10px">
+              <label style="font-size:13px;color:var(--muted)">Message</label>
+              <textarea name="message" rows="6" style="padding:10px;border-radius:8px;border:1px solid #e6e9ef" placeholder="Write your message..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer-section">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>New City Plus Hospital</h4>
+        <p>A multi-specialty hospital committed to providing world-class medical services with compassion.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="departments.html">Departments</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Departments</h4>
+        <ul style="list-style:none;padding:0;margin:0">
+          <li>Cardiology</li>
+          <li>Orthopedics</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>📍 123 Healthcare Avenue, New City</p>
+        <p>📞 +1 (234) 567-890</p>
+        <p>✉️ info@newcityhospital.com</p>
+      </div>
+    </div>
+  </footer>
+
+  <div class="map-container">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.906769879764!2d-73.989969!3d40.748817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU1LjciTiA3M8KwNTknMjMuOSJX!5e0!3m2!1sen!2sus!4v1700000000000" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <div class="footer-bottom">© 2025 New City Plus Hospital. All rights reserved.</div>
+
+</body>
+</html>
